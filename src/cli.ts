@@ -15,6 +15,10 @@ class Cli {
         // ToDo
     }
 
+    static tryWithEnvVariables() {
+        // ToDo
+    }
+
     static async tryWithArguments() {
         try {
             const args     = process.argv.slice(2);
