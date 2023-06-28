@@ -1,0 +1,33 @@
+{
+  "name"            : "@boolcode/heyhi",
+  "version"         : "0.0.4",
+  "description"     : "Easily notify multiple systems",
+  "type"            : "module",
+  "module"          : "dist/index.js",
+  "main"            : "dist/index.js",
+  "typings"         : "dist/index.d.ts",
+  "keywords"        : [],
+  "author"          : "BoolCode",
+  "license"         : "MIT",
+  "bin"             : {
+    "heyhi": "dist/cli.js"
+  },
+  "files"           : [
+    "dist"
+  ],
+  "scripts"         : {
+    "build"   : "bun dist.ts",
+    "test"    : "bun test",
+    "test:e2e": "bun tests/e2e/all.e2e.ts"
+  },
+  "devDependencies" : {
+    "bun-types"           : "latest",
+    "dts-bundle-generator": "^8.0.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies"    : {
+    "cross-fetch": "^3.1.5"
+  }
+}
